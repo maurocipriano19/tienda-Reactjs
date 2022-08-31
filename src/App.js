@@ -1,16 +1,23 @@
-import './App.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import NavBar from './Components/NavBar';
+import './estilos.css';
+import 'core-js/actual';
 
-function App() {
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
+
+ function App() {
   return (
-    <div className="App">
-      <Router>
-        <NavBar/>
-      </Router>
+    <>
       
-    </div>
+      <NavBar />     
+      <ItemListContainer  texto='Tatoos'/>
+      
+    </>
+
+
+
+
   );
 }
+
 
 export default App;
