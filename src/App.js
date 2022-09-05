@@ -9,7 +9,7 @@ import ItemListContainer from './components/ItemListContainer';
     <>
       
       <NavBar />     
-      <ItemListContainer  texto='Tatoos'/>
+      <ItemListContainer  greeting = {"greeting"}/>
       
     </>
 

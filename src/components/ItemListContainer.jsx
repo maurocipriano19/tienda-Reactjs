@@ -1,11 +1,23 @@
 import React from "react";
-import Title from "./Title";
+import ItemCount from "./ItemCount";
+import "./estilos.css";
 
 
-export const ItemListContainer = ({texto}) => {
+const ItemListContainer = ( {greeting} ) => {
+
+    const onAdd = (cantidad) => {
+        console.log(`SE AGREGO ${cantidad}`);
+    }
+
     return (
-        <Title greeting={texto}/>
-    );
+        <div className="Container">
+            <h2> {greeting} </h2>
+
+            <ItemCount stock  = {5} initial = {1} onAdd={onAdd} />
+
+        </div>
+    )
 }
+
 
 export default ItemListContainer;
