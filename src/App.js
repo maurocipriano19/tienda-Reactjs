@@ -1,19 +1,21 @@
 import './estilos.css';
 import 'core-js/actual';
 
-import NavBar from './components/NavBar';
+
 import ItemListContainer from './components/ItemListContainer';
 
  function App() {
+
+  const productos = { id:0, nombre:"remera", precio:80000}
+
   return (
     <>
       
-      <NavBar />     
-      <ItemListContainer  greeting = {"greeting"}/>
+      
+      <ItemListContainer  
+      productos = {productos}/>
       
     </>
-
-
 
 
   );
